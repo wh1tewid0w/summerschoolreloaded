@@ -28,9 +28,9 @@
 
 // Update these with values suitable for your network.
 
-const char* ssid = "summerschool";
-const char* password = "summerschool";
-const char* mqtt_server = "192.168.88.249";
+const char* ssid = "#####";
+const char* password = "#####";
+const char* mqtt_server = "#####";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
