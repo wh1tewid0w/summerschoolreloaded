@@ -41,3 +41,21 @@ mqtt:
  password: {password}     //zuvor festgelegtes Passwort
 
 ```
+2. Nun muss noch ein sogenannter "Sensor" angelegt werden
+```
+sensor:
+  - platform: mqtt        //Benutzte Plattform
+    state_topic: topic    //Notwendig, sozusagen der Name des Kanals
+```
+3. Zuletzt muss ein Switch, also ein Schalter angelegt werden welcher z.B. per 433mHz Aus- und Einschaltcodes versendet
+```
+switch:
+  - platform: rpi_rf                                      //Benutzte Plattform
+    gpio: 02                                              //Data-Pin des angeschlossenen 433mHz Transmitters
+    switches:                                                 
+     steckdose_1:                                         //Individueller Name
+      pulselength: 400                                    //Delay
+      protocol: 5                                         //Protocol-Typ
+      code_on: 12800688, 12884272, 13311296, 13574512     //Einschaltcodes
+      code_off: 13202192, 13125520, 13098656, 12961312    //Ausschaltcodes
+```

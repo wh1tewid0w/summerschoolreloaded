@@ -6,7 +6,8 @@
 * 2x microUSB Kabel (für Strom)
 * NodeMCU
 * Lichtsensor
-* Kabel
+* 433mHz Transmitter und Receiver
+* Kabel zum verbinden von Komponenten
 
 ## Software
 * HASSbian
