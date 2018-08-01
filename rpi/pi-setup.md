@@ -1,5 +1,4 @@
 # Installation von RPi Zero W
-## Installation
 1. Download von [HASSbian](https://github.com/home-assistant/pi-gen/releases/tag/v.1.3.2)
 2. Entpacken
 3. Auf microSD-Karte brennen (z.B. mit [Etcher](https://etcher.io/)
