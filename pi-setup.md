@@ -4,8 +4,7 @@
 2. Entpacken
 3. Auf microSD-Karte brennen (z.B. mit [Etcher](https://etcher.io/)
 4. Remounten
-5. Im Ordner "boot" eine Datei mit dem Namen "wpa_supplicant.conf" anlegen
-  * In dieser wird folgendes hinterlegt:
+5. Im Ordner "boot" eine Datei mit dem Namen "wpa_supplicant.conf" anlegen. In dieser wird folgendes hinterlegt:
 ```
 country=DE
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
