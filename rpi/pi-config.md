@@ -1,7 +1,7 @@
 # Konfiguration von RPi Zero W
 ## Start von HomeAssistant
 1. Folgende Kommandos werden für den Start benötigt, als auch der automatische Start des Systems nach Neustart:
-```bash
+```shell
 systemctl enable install_homeassistant.service
 systemctl start install_homeassistant.service
 ```
@@ -9,7 +9,7 @@ systemctl start install_homeassistant.service
 Für MQTT über HomeAssistant wird ein dedizierter Broker verwendet, hier Mosquitto.
 
 1. Paket herunterladen und installieren
-```bash
+```shell
 sudo apt-get install mosquitto mosquitto-clients
 ```
 2. Zum anlegen von Username und Passwort zunächst folgenden Befehl benutzen {name} durch eigenen individuellen Username ersetzen
