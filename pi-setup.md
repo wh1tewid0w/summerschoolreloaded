@@ -1,5 +1,5 @@
-# Installation und Konfiguration von RPi Zero W
-
+# Installation von RPi Zero W
+## Installation
 1. Download von [HASSbian](https://github.com/home-assistant/pi-gen/releases/tag/v.1.3.2)
 2. Entpacken
 3. Auf microSD-Karte brennen (z.B. mit [Etcher](https://etcher.io/)
@@ -21,3 +21,6 @@ network={
 7. microSD unmouten und in Raspberry Pi Zero W stecken
 8. Mit Strom verkabeln und kurze Zeit warten
 9. Nun kann man sich mithilfe eines ssh-client mit dem Pi verbunden werden
+```
+Die IP-Adresse lässt sich mithilfe von nmap oder anderen Netzwerk-Scannern herausfinden.
+```
