@@ -35,9 +35,9 @@ sudo systemctl restart mosquitto
 1. In der Konfigurationsdatei wird am Dateiende folgendes hinzugefügt:
 ```
 mqtt:
- broker: 127.0.0.1 //hier intern auf gleichem System wie HASS, falls extern, hier externe IP angeben
- port: 1883 //Port worüber Mosquitto angesprochen wird
- username: {username} //zuvor individuell angegebener Username
- password: {password} //zuvor festgelegtes Passwort
+ broker: 127.0.0.1        //hier intern auf gleichem System wie HASS, falls extern, hier externe IP angeben
+ port: 1883               //Port worüber Mosquitto angesprochen wird
+ username: {username}     //zuvor individuell angegebener Username
+ password: {password}     //zuvor festgelegtes Passwort
 
 ```
