@@ -47,8 +47,8 @@ sudo apt-get install php php-mysql -y
 ```
      sudo dpkg-reconfigure phpmyadmin
 ```
-    After that you have to answer with yes.
-    First choose the connection via TCP/IP and then take localhost after that enter the                     port or let it empty. You can enter any name you want. Then anter the MySSQL username for phpmyadmin.Next two steps you will set password after your preferences. Afterwards you will set up a username and then you wil have to
+After that you have to answer with yes.
+First choose the connection via TCP/IP and then take localhost after that enter the                     port or let it empty. You can enter any name you want. Then anter the MySSQL username for phpmyadmin.Next two steps you will set password after your preferences. Afterwards you will set up a username and then you wil have to
 choose apache2. It will end up with a error massage and you will have to repeat question skip.
 
 ## Step 7:
