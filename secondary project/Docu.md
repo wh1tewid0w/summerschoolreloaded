@@ -104,4 +104,6 @@ Next you will install the homeassistant
 pip3 install homeassistant
 ```
 Now you can start HASS with the following command
-`hass`
+```
+hass
+```
