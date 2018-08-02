@@ -33,7 +33,7 @@ sudo apt-get install php php-mysql -y
      phpinfo();
      ?>www/html/phpinfo.php
 ```
-    Then enter
+Then enter
 
 3. Save file Strg+O Enter and close Strg+X Enter
 
@@ -42,8 +42,8 @@ sudo apt-get install php php-mysql -y
 ```
     sudo apt-get install phpmyadmin -y
 ```
-     Then choose apache2 and press space. Next question answer with yes.
-2. Then enter code to get into config
+Then choose apache2 and press space. Next question answer with yes.
+2. Enter the following command to edit config
 ```
      sudo dpkg-reconfigure phpmyadmin
 ```
@@ -57,7 +57,7 @@ choose apache2. It will end up with a error massage and you will have to repeat 
     sudo apt-get install proftpd -y
     sudo nano /etc/proftpd/proftpd.conf
 ```
-    At the end of the apperaing code you have to add another code
+At the end of the apperaing code you have to add another code
 ```
     DefaultRoot ~
     AuthOrder mod_auth_file.c
@@ -66,7 +66,7 @@ choose apache2. It will end up with a error massage and you will have to repeat 
     AuthPAM off
     RequireValidShell off
 ```
-    Save with Strg+O and close with Strg+X
+Save with Strg+O and close with Strg+X
 
 ## Step 8:
 1. Install WordPress
@@ -78,30 +78,30 @@ choose apache2. It will end up with a error massage and you will have to repeat 
 ```
     sudo apt-get install python3 python3-venv python3-pip
 ```
-     Then add an account for home assistant
-     ```
-    sudo useradd -rm homeassistant -G dialout,gpio
-    ```
-    Next you create a directory for the installation of Homeassistant and change the owner to the homeassistant account
-    ```
-    cd /srv
-    sudo mkdir homeassistant
-    sudo chown homeassistant:homeassistant homeassistant
-    ```
-    Then you will create and change to a virtual enviroment
-    ```
-     sudo -u homeassitant -H -s
-    cd /srv/homeassistant
-    phyton3 -m venv .
-   source bin/activate
-   ```
-    after that when you have ben activated you will have to install required phyton package
-    ```
-   python3 -m pip install wheel
-   ```
-  Next you will install the homeassistant
-  ```
-  pip3 install homeassistant
-  ```
+Then add an account for home assistant
+```
+sudo useradd -rm homeassistant -G dialout,gpio
+```
+Next you create a directory for the installation of Homeassistant and change the owner to the homeassistant account
+```
+cd /srv
+sudo mkdir homeassistant
+sudo chown homeassistant:homeassistant homeassistant
+```
+Then you will create and change to a virtual enviroment
+```
+sudo -u homeassitant -H -s
+cd /srv/homeassistant
+phyton3 -m venv .
+source bin/activate
+```
+after that when you have ben activated you will have to install required phyton package
+```
+python3 -m pip install wheel
+```
+Next you will install the homeassistant
+```
+pip3 install homeassistant
+```
 Now you can start HASS with the following command
 `hass`
